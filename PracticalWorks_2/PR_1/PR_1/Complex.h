@@ -14,7 +14,7 @@ public:
 	Complex(const Complex&);
 
 	friend std::ostream& operator << (std::ostream&, const Complex&);
-	friend std::istream& operator >> (std::istream&, Complex);
+	friend std::istream& operator >> (std::istream&, Complex&);
 
 	friend Complex operator + (const double&, const Complex&);
 	friend Complex operator + (const Complex&, const double&);
@@ -39,5 +39,5 @@ public:
 
 	void SetIsAllSignsVisible(const bool&);
 
-	Complex Pow(int);
+	void Pow(int);
 };

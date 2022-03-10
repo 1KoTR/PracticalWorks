@@ -38,7 +38,7 @@ ostream& operator << (ostream& stream, const Complex& a)
 	}
 	return stream << (a._isAllSignsVisible ? " * i" : "i");
 }
-istream& operator >> (istream& stream, Complex a)
+istream& operator >> (istream& stream, Complex& a)
 {
 	stream >> a._real;
 	stream >> a._image;
@@ -82,8 +82,8 @@ Complex operator * (const Complex& a, const Complex& b)
 {
 	return Complex
 	(
-		a._real * a._real - b._image * b._image,
-		a._real * b._image + a._image * a._real
+		a._real * b._real - a._image * b._image,
+		a._real * b._image + a._image * b._real
 	);
 }
 
@@ -148,7 +148,7 @@ void Complex::SetIsAllSignsVisible(const bool& isAllSignsVisible)
 	_isAllSignsVisible = isAllSignsVisible;
 }
 
-Complex Complex::Pow(int degree)
+void Complex::Pow(int degree)
 {
 	if (degree == 0)
 	{
@@ -161,11 +161,8 @@ Complex Complex::Pow(int degree)
 		for (int i = 0, count = abs(degree); i < count; i++)
 			res = res * *this;
 		if (degree < 0)
-		{
 			res = 1 / res;
-		}
 		_real = res._real;
 		_image = res._image;
 	}
-	return *this;
 }
