@@ -1,0 +1,3 @@
+C:/MyProjects/PracticalWorks/PracticalWorks_2/PR_1_SIOD/cmake-build-debug/CMakeFiles/PR_1_SIOD.dir
+C:/MyProjects/PracticalWorks/PracticalWorks_2/PR_1_SIOD/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/MyProjects/PracticalWorks/PracticalWorks_2/PR_1_SIOD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

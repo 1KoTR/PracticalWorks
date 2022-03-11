@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/MyProjects/PracticalWorks/PracticalWorks_2/PR_1_SIOD/main.c
+stdio.h
+-
+stdlib.h
+-
+

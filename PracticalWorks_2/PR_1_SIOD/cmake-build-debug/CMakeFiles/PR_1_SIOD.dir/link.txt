@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\PR_1_SIOD.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\PR_1_SIOD.dir/objects.a @CMakeFiles\PR_1_SIOD.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\PR_1_SIOD.dir/objects.a -Wl,--no-whole-archive -o PR_1_SIOD.exe -Wl,--out-implib,libPR_1_SIOD.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PR_1_SIOD.dir\linklibs.rsp
